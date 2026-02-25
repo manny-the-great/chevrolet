@@ -1,199 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Website</title>
+    <title>Chevrolet Camaro — Performance & Parts</title>
+    <meta name="description"
+        content="Chevrolet Camaro — American muscle performance, genuine parts, and expert service since 1966.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
 
-        <nav class="navbar">
-            <div class="navbar-logo">
-              <a href="#" class="">Chevy Camaro</a>
-            </div>
-            <ul class="navbar-menu">
-              <li><a href="#" class="home">Home</a></li>
-              <li><a href="#" class="others">Garage</a></li>
-              <li><a href="#" class="others">News</a></li>
-              <li><a href="#" class="others">Purchase</a></li>
-            </ul>
-            <div class="navbar-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </nav>
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
 
-        <div class="header-body">
-            <div>
-                <h1>Join The Journey</h1>
-                <p>The Chevy Camaro was launched in 1966 to compete with the popular Ford Mustang.
-                     Chevrolet Camaro is among the last breeds of the American muscle car era...
+        <!-- Hero background image -->
+        <div class="hero-bg">
+            <img src="imgs/bg.jpg" alt="Chevrolet Camaro" class="hero-bg-img" id="heroBgImg">
+        </div>
+
+        <!-- Top content -->
+        <div class="hero-top" id="heroTop">
+            <div class="hero-tagline scroll-reveal">
+                <h2 class="tagline-main">PERFORMANCE,</h2>
+                <h2 class="tagline-sub">PARTS & SERVICE</h2>
+            </div>
+            <nav class="hero-nav" id="heroNav">
+                <a href="#features" class="nav-link">Why Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#location" class="nav-link">Find Us</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Left subtitle -->
+        <div class="hero-subtitle scroll-reveal" id="heroSubtitle">
+            <p class="subtitle-label">PARTS FOR ALL MODELS</p>
+            <p class="subtitle-year">SINCE 1966</p>
+        </div>
+
+        <!-- Car image floating 
+        <div class="hero-car-wrap">
+            <img src="img/c5.png" alt="Chevrolet Camaro ZL1" class="hero-car" id="heroCar">
+        </div>-->
+
+        <!-- Giant brand name -->
+        <div class="hero-brand" id="heroBrand">
+            <h1 class="brand-text">CHEVROLET</h1>
+        </div>
+    </section>
+
+
+    <!-- ========== FEATURES / WHY TRUST US ========== -->
+    <section class="features" id="features">
+        <div class="features-inner">
+
+            <!-- Left column -->
+            <div class="features-left">
+                <h2 class="section-title scroll-reveal">
+                    WHY CHOOSE<br>
+                    <span class="title-bold">CAMARO</span>
+                </h2>
+
+                <!-- Video Card -->
+                <div class="video-card scroll-reveal" id="videoCard">
+                    <div class="video-thumb">
+                        <!-- User will replace with actual video; placeholder with existing image -->
+                        <img src="imgs/bg2.jpg" alt="Our Work" class="video-thumb-img">
+                        <button class="play-btn" id="playBtn" aria-label="Play video">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M8 5.14v13.72a1 1 0 001.5.86l11.04-6.86a1 1 0 000-1.72L9.5 4.28A1 1 0 008 5.14z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-label">WATCH THE<br>CAMARO IN ACTION</h4>
+                        <p class="video-desc">1 minute — and you'll see why everyone trusts Camaro</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right column: 4 numbered cards -->
+            <div class="features-right">
+                <div class="feature-card scroll-reveal" data-delay="0">
+                    <div class="card-header">
+                        <div class="card-check">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="card-number">01</span>
+                    </div>
+                    <p class="card-text">Genuine OEM and performance aftermarket parts in excellent condition</p>
+                </div>
+
+                <div class="feature-card scroll-reveal" data-delay="100">
+                    <div class="card-header">
+                        <div class="card-check">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="card-number">02</span>
+                    </div>
+                    <p class="card-text">Inspection and quality control of every part before sale</p>
+                </div>
+
+                <div class="feature-card scroll-reveal" data-delay="200">
+                    <div class="card-header">
+                        <div class="card-check">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="card-number">03</span>
+                    </div>
+                    <p class="card-text">Parts selection by VIN with guaranteed compatibility for your build</p>
+                </div>
+
+                <div class="feature-card scroll-reveal" data-delay="300">
+                    <div class="card-header">
+                        <div class="card-check">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8.5L6.5 12L13 4" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <span class="card-number">04</span>
+                    </div>
+                    <p class="card-text">All parts in stock — no waiting and no pre-orders required</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ========== CONTACT / REQUEST FORM ========== -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+
+            <!-- Left: Form -->
+            <div class="contact-form-wrap scroll-reveal">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="formName" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="formPhone" placeholder="Your phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="formVin" placeholder="VIN Code">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="formParts" placeholder="Parts you're interested in">
+                    </div>
+                    <div class="form-upload">
+                        <p class="upload-label">Upload photos of tech passport, parts or parts list</p>
+                        <div class="upload-row">
+                            <label for="formFile" class="upload-btn">Choose file</label>
+                            <input type="file" id="formFile" class="upload-input">
+                            <span class="upload-status" id="uploadStatus">No file chosen</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span>SUBMIT REQUEST</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right: CTA Text -->
+            <div class="contact-cta scroll-reveal">
+                <h2 class="cta-title">
+                    LEAVE A REQUEST<br>
+                    <span class="cta-highlight">AND WE'LL GET<br>IN TOUCH</span>
+                </h2>
+                <p class="cta-desc">
+                    FILL IN YOUR DETAILS <span class="cta-accent">AND HIT THE "SUBMIT" BUTTON.</span>
                 </p>
             </div>
-        </div>
-    </header>
 
-    <section class="about">
-        <div class="heading">
-            <h2>Take a journey, <br>
-                bend space
-            </h2>
-            <p>
-                The 1960s saw the debut of many powerful and high-performance sports cars such as the Ford Mustang, Dodge Charger, and Challenger.
-                 Among these muscle cars, the Chevrolet Camaro made quite a name. Besides, Chevrolet Camaro is among the last breeds of the American muscle car era.
-            </p>
         </div>
-        <div class="infos">
-            <div class="info">
-                <img src="imgs/v8.png" alt="icon" class="icon">
-                <div>
-                    <h3>Engine Ability</h3>
-                    <p>
-                        Chevrolet Camaro came with a choice of eight engines in its first generation.
-                        Later, a special performance edition was included featuring a V8 engine.
-                    </p>
-                </div>
+    </section>
+
+
+    <!-- ========== LOCATION / MAP SECTION ========== -->
+    <section class="location" id="location">
+        <div class="location-inner">
+            <div class="location-info scroll-reveal">
+                <h3 class="location-title">FIND US</h3>
+                <p class="location-address">1500 Estes Ave, Elk Grove Village,<br>IL 60007, United States</p>
+                <p class="location-hours">Mon – Fri: 8:00 AM – 6:00 PM<br>Sat: 9:00 AM – 3:00 PM</p>
+                <a href="tel:+18005551966" class="location-phone">+1 (800) 555-1966</a>
             </div>
-            <div class="info">
-                <img src="imgs/speed.png" alt="icon" class="icon">
-                <div>
-                    <h3>Performance</h3>
-                    <p>
-                        Performance figures include a 0 to 60 mph (0 to 97 km/h) acceleration time of 3.5 seconds.
-                    </p>
-                </div>
-            </div>
-            <div class="info">
-                <img src="imgs/bolt.png" alt="icon" class="icon">
-                <div>
-                    <h3>Cutting Edge</h3>
-                    <p>
-                        The Z/28 came with a 302 CID V8 engine which was produced 
-                        to meet the race legalities of that time.
-                    </p>
-                </div>
+            <div class="location-map scroll-reveal">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.123456!2d-87.99!3d42.01!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDAwJzM2LjAiTiA4N8KwNTknMjQuMCJX!5e0!3m2!1sen!2sus!4v1600000000000"
+                    width="100%" height="100%"
+                    style="border:0; border-radius: 12px; filter: invert(0.9) hue-rotate(180deg) brightness(0.8) contrast(1.2);"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Our Location">
+                </iframe>
             </div>
         </div>
     </section>
 
-    <section class="specs">
-        <div>
-            <div class="specs-header">
-                <h2>Tech Specs</h2>
-                <span>Engine</span>
-            </div>
-            <ul>
-                <li>
-                    <span>Engine Displacement</span>
-                    <span>6.2L LT1 V8 Engine</span>
-                </li>
-                <li>
-                    <span>Maximum Power</span>
-                    <span>453 PS (447 bhp - 333 kW) at 5700 rpm</span>
-                </li>
-                <li>
-                    <span>Maximum Torque</span>
-                    <span>617 Nm (455 lb.ft) at 4600 rpm</span>
-                </li>
-                <li>
-                    <span>Turning Radius</span>
-                    <span>11.7 m / 38.4 feet</span>
-                </li>
-                <li>
-                    <span>No. of cylinders</span>
-                    <span>V 8</span>
-                </li>
-                <li>
-                    <span>Drive Type</span>
-                    <span>RWD</span>
-                </li>
-                <li>
-                    <span>Turbo Charger</span>
-                    <span>No</span>
-                </li>
-                <li>
-                    <span>Super Charger</span>
-                    <span>No</span>
-                </li>
-                <li>
-                    <span>Fuel Supply</span>
-                    <span>Multipoint Injection</span>
-                </li>
-            </ul>
-        </div>
-    </section>
 
-    <section class="panels">
-        <div class="panels-sm">
-            <div class="panel">
-                <div>
-                    <div class="icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h2>Power and speed unleashed</h2>
-                    <a href="#">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-brand">CHEVROLET CAMARO</span>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#features">Why Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#location">Location</a>
             </div>
-            <div class="panel"></div>
-            <div class="panel"></div>
-            <div class="panel">
-                <div>
-                    <div class="icon">
-                        <i class="fas fa-tint"></i>
-                    </div>
-                    <h2>Respectful to environment</h2>
-                    <a href="#">
-                        <span>Learn More</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
+            <span class="footer-copy">&copy; 2026 Chevrolet. All rights reserved.</span>
         </div>
-        <div class="panel-lg"></div>
-    </section>
-
-    <section class="car-stats">
-        <div class="stats">
-            <div>
-                <h1 class="counter" data-tagret="206" data-speed="10">
-                    0
-                </h1>
-                <h1>kmph</h1>
-                <h5>Top Speed</h5>
-            </div>
-            <div>
-                <h1 class="counter" data-tagret="7" data-speed="500">
-                    0
-                </h1>
-                <h1>gears</h1>
-                <h5>Gear Box</h5>
-            </div>
-            <div>
-                <h1 class="counter" data-tagret="473" data-speed="1">
-                    0
-                </h1>
-                <h1>hp</h1>
-                <h5>Horse Power</h5>
-            </div>
-        </div>
-        <div class="car">
-            <div class="circle">
-                <img src="img/c5.png" alt="car">
-                <div class="inner-md-circle"></div>
-                <div class="inner-sm-circle"></div>
-            </div>
-        </div>
-    </section>
-
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
